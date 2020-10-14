@@ -1,0 +1,17 @@
+{
+  "name": "ethereum1.1",
+  "version": "1.0.0",
+  "description": "intento 2 en el primero no pude con los modulos",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^4.0.0",
+    "mocha": "^5.2.0",
+    "solc": "^0.6.8",
+    "web3": "^1.2.7"
+  }
+}
