@@ -22,8 +22,8 @@ contract Airline {
     mapping(address => Flight[]) public customersFlights;
     mapping(address => uint256) public customerTotalFlights;
 
-    // envia una respuesta a un usuario, como un mensaje al parecer
-    event FlightPurchased(address indexed customer, uint256 price);
+    // Evento: envia una respuesta a un usuario, como un mensaje al parecer
+    event FlightPurchased(address indexed customer, uint256 price, string flight);
 
     constructor() public {
         owner = msg.sender;
@@ -45,7 +45,7 @@ contract Airline {
         //creo que no esta sumando se queda en 1 siempre o falla mi logica
         customerTotalFlights[msg.sender]++;
 
-        emit FlightPurchased(msg.sender, flight.price);
+        emit FlightPurchased(msg.sender, flight.price, flight.name);
     }
 
     function totalFlights() public view returns (uint256) {
