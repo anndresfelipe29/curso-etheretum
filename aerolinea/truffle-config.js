@@ -46,7 +46,7 @@ module.exports = {
       port:7545,
       network_id: '*',   // * para que se envie la petición a cualquier red en esa dirección
       gas:5000000 ,   //limite de gas
-      from: "0xC2e5c0E064783e47D220142bd418857D7B01aFf3"
+      // from: "0xC2e5c0E064783e47D220142bd418857D7B01aFf3"
     },
     // Another network with more advanced options...
     // advanced: {

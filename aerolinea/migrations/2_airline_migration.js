@@ -1,4 +1,4 @@
-const Airline = artifacts.require('./Airline.sol');
+ const Airline = artifacts.require('./Airline.sol');
 
 module.exports = function (deployer) {
   deployer.deploy(Airline);
